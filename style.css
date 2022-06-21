@@ -54,6 +54,9 @@ li a{
     text-align: center;
     font-size: 20px;
 }
+.creations img {
+    margin-left: 20px;
+}
 header {
     padding: 10px;
 }
@@ -62,13 +65,16 @@ header {
     max-width: 300px;
     object-fit: cover;
 }
+li a {
+    margin: 0;
+}
 .footer-info ul li a {
     padding: 5px;
     margin: 0;
 }
 .hamburger{
     margin-left: 85%;
-	position:fixed;
+	position: absolute;
     background-color:transparent;
 	left:0;
 	top:0;
@@ -99,7 +105,7 @@ header {
 	transform:translate3d(0, 0, 0);
 	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
 	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    background-color: black;
+    background-color: white;
 }
 .hamburger:hover .-top{
 	-webkit-transform:translateY(-100%);
@@ -129,11 +135,11 @@ header {
   transform: translate3d(0px, 0px, 0px);
 }
 .menuppal{
-   background-color: #ffffff;
+   background-color: black;
     bottom: 0;
     height: 100%;
     left: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     transform: translate3d(0px, -100%, 0px);
     transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
@@ -157,7 +163,7 @@ header {
 }
 .menuppal ul li a{
   text-decoration:none;
-  color: black;
+  color: white;
 }
 .menuppal ul li a:hover{
     text-decoration-line: none;
@@ -207,6 +213,14 @@ header {
     font-weight: bold;
     cursor: pointer;
     height: 30px;
+    border: none;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 350ms all;
+    font-weight: bold;
 }
 .creations {
     display: flex;
@@ -221,6 +235,7 @@ header {
     margin-top: 20px;
     cursor: pointer;
     position: relative;
+    margin-left: 20px;
 }
 .creations img:hover {
     opacity: 0.6;
@@ -233,7 +248,7 @@ header {
 .textoCard {
     position: absolute;
     bottom: 40px;
-    left: 20px;
+    left: 35px;
     color: white;
     font-size: 25px;
     font-weight: 300;
